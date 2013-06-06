@@ -1,0 +1,233 @@
+/*RIBBON*/
+.ribbon {
+ font-size: 16px !important;
+ 
+ /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+ width: 50%;
+    
+ position: relative;
+ background: #222;
+ color: #fff;
+ text-align: center;
+ padding: 1em 2em; /* Adjust to suit */
+ margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid #000;
+ z-index: -1;
+}
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+/*
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #666 transparent transparent transparent;
+ bottom: -1em;
+}
+*/
+#displaynone {
+	display:none;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+
+.ribbonfix{
+	width:1024px;
+	margin-left:26px
+}
+.pagetitle {
+	font-family: 'Oregano', cursive;
+}
+/*END OF RIBBON*/
+
+html {
+	
+}
+
+
+body {
+	background-color:#FCF0DC !important;
+	background:url('http://www.fullstopinteractive.com/img/noise.png'), url(../img/white_top.jpg) repeat-x;
+	
+	font-family:Verdana, Geneva, sans-serif !important;
+}
+
+.fancyfont1 {
+	font-family: 'Oregano', cursive;
+}
+.container {
+	
+}
+.sidebar-nav {
+    padding: 9px 0;
+    position:fixed;
+    width:100px;
+	background-color:#973A4B; 
+	top: 175px;
+	margin-left:-80px;
+	box-shadow: 0 0 5px 0 #000;
+	float:none;
+}
+.sidebar-nav a {
+	color:#D0B58A;
+	font-family: 'Oregano', cursive;
+	font-size:18px;
+	text-align:center;
+}
+.nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
+	background-color:#61B49F !important;
+	box-shadow: 0 0 2px 0 #000;
+	
+}
+
+.slide1 {
+	background-image: url(../img/carousel/1.jpeg);
+	width: 580px;
+	height: 550px;
+	margin:0px !important;
+}
+
+.slide2 {
+	background: url(../img/carousel/2.jpeg);
+	width: 580px;
+	height: 550px;
+	margin:0px !important;
+}
+
+.slide3 {
+	background: url(../img/carousel/3.jpeg);
+	width: 580px;
+	height: 550px;
+	margin:0px !important;
+}
+
+.slide4 {
+	background: url(../img/carousel/4.jpeg);
+	width: 580px;
+	height: 550px;
+	margin:0px !important;
+}
+
+.slide5 {
+	background: url(../img/carousel/5.jpeg);
+	width: 580px;
+	height: 550px;
+	margin:0px !important;
+}
+.fixedcarousel {
+	width: 580px;
+	height: 550px !important;
+	
+}
+h3 {
+	color:#973B4B !important;
+	font-family: 'Oregano', cursive !important;
+	
+}
+h4 {
+	
+}
+ .effects {
+	box-shadow: 0 0 12px 0 #000;
+	margin-top:10px;
+    margin-bottom: 20px;
+}
+.menuitem {
+	padding:15px;
+	padding-bottom:0px;
+	margin-left:0px !important;
+	border-bottom:1px dotted #666;
+}
+.goright {
+	background-image: url(../img/arrow.png);
+	background-size:100%;
+	height:550px;
+	width:50px;
+	position: absolute;
+	top:0px;
+	left:530px;
+}
+.goleft {
+	background-image: url(../img/arrow.png);
+	-webkit-transform: rotate(180deg);
+	background-size:100%;
+	height:550px;
+	width:50px;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+.description {
+	padding-left: 10px;
+}
+.price {
+	margin-left:225px;
+	margin-top:50px;
+}
+
+.order {
+	text-align:right;
+	margin-top:-15px;
+	margin-bottom:15px;
+}
+.alert {
+	margin-top:-5px !important;
+    margin-bottom:10px !important;
+    padding-bottom:4px !important;
+    padding-top: 4px !important;
+	background-color:#F8D5C0 !important;
+	border:none !important;
+	
+}
+.alert, .alert h4 {
+	color:#A1633E !important;
+}
+.column1 {
+	border-right:1px dotted #666;
+}
+.clear {
+	clear:both;
+}
+.footer {
+	margin-bottom:40px;
+	margin-top:30px;
+	list-style:none;
+}
+.footer ul {
+	
+}
+.footer li {
+	display:inline;
+	margin-right:10px;
+    width: 300px;
+}
+.footer a {
+	color:#0099cc;
+}
+.goodbye {
+	font-family: 'Oregano', cursive;
+	font-size:18px;
+	color:#333;
+}
